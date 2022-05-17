@@ -90,6 +90,32 @@ html {
 }
 /* CATEGORIES */
 /* POST */
-
+.post--info {
+   height: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url('./assets/post.jpg');
+   background-position: center;
+   background-size: cover;
+   border-radius: 10px;
+   margin-top: 10px;
+}
+.post--info__text {
+   text-align: center;
+}
+.post--info__button {
+   height: 40px;
+   width: 40%;
+   background-color: var(--color-third);
+   color: var(--color-white);
+   border: none;
+   border-radius: 10px;
+   font-size: var(--font-size-subtitle);
+   font-weight: var(--font-weight-bold);
+}
 /* POST */
 /* MAIN */
