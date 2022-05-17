@@ -1,0 +1,26 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Rubik', sans-serif;
+}
+html {
+   font-size: 15px;
+}
+:root {
+   --font-size-title: 1.5rem;
+   --font-size-subtitle: 1.3rem;
+   --font-size-text: 1rem;
+   --font-size-tiny: 0.8rem;
+   --font-weight-bold: 600;
+   --font-weight-medium: 500;
+   --font-weight-normal: 400;
+   --font-weight-tiny: 300;
+   --color-first: #112b3c;
+   --color-second: #205375;
+   --color-third: #f66b0e;
+   --color-white: #efefef;
+   --color-black: #040303;
+   --color-red: #f05454;
+   --color-green: #36ae7c;
+}
