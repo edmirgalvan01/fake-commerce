@@ -89,6 +89,7 @@ html {
    text-align: center;
 }
 /* CATEGORIES */
+
 /* POST */
 .post--info {
    height: 200px;
@@ -118,4 +119,24 @@ html {
    font-weight: var(--font-weight-bold);
 }
 /* POST */
+.products--list {
+   margin-top: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 10px;
+}
+.product--img {
+   height: 250px;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 8px 8px 0 0;
+}
+.product--info__title {
+   font-weight: var(--font-weight-bold);
+   font-size: var(--font-size-subtitle);
+}
+.product--info__price {
+   font-weight: var(--font-weight-tiny);
+}
 /* MAIN */
