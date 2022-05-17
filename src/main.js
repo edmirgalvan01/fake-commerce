@@ -1,6 +1,8 @@
 const URL_CATEGORIES = 'https://api.escuelajs.co/api/v1/categories';
 const URL_ALL_PRODUCTS =
    'https://api.escuelajs.co/api/v1/products?offset=0&limit=10';
+const URL_PRODUCTS_BY_CATEGORY = (idCategory) =>
+   `https://api.escuelajs.co/api/v1/categories/${idCategory}/products`;
 
 async function getAllCategories() {
    const response = await fetch(URL_CATEGORIES);
@@ -23,6 +25,10 @@ async function getAllCategories() {
       div.appendChild(img);
       div.appendChild(p);
       categoriesListContainer.appendChild(div);
+
+      div.addEventListener('click', () => {
+         location.hash = `#category=${category.name}`;
+      });
    });
 }
 
@@ -31,6 +37,8 @@ async function getAllProducts() {
    const data = await response.json();
 
    productsListContainer.innerText = '';
+   productsTitle.innerText = 'Products';
+
    data.map((product) => {
       const card = document.createElement('div');
       const img = document.createElement('img');
@@ -61,5 +69,15 @@ async function getAllProducts() {
    });
 }
 
+async function getProductsByCategory(idCategory) {
+   const response = await fetch(URL_PRODUCTS_BY_CATEGORY(idCategory));
+   const data = await response.json();
+
+   const url = window.location.href;
+   const urlSplit = url.split('=');
+   console.log(urlSplit);
+}
+
+getProductsByCategory(1);
 getAllProducts();
 getAllCategories();
