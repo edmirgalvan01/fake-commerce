@@ -167,4 +167,11 @@ html {
    font-size: var(--font-size-subtitle);
    font-weight: var(--font-weight-bold);
 }
+.footer--social-media {
+   display: flex;
+   gap: 20px;
+}
+.footer--social-media__item {
+   text-decoration: none;
+}
 /* FOOTER */
