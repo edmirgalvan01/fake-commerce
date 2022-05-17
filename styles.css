@@ -27,6 +27,10 @@ html {
    --color-red: #f05454;
    --color-green: #36ae7c;
 }
+.title {
+   font-size: var(--font-size-title);
+   font-weight: var(--font-weight-bold);
+}
 /* HELPERS */
 
 /* HEADER */
@@ -54,3 +58,35 @@ html {
    font-weight: var(--font-weight-tiny);
 }
 /* HEADER */
+
+/* MAIN */
+.main {
+   padding: 20px 10px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+/* CATEGORIES */
+.categories--list {
+   display: flex;
+   margin-top: 10px;
+   gap: 15px;
+   padding-bottom: 45px;
+   overflow-y: hidden;
+   overflow-x: auto;
+   white-space: nowrap;
+}
+.category {
+   width: 30%;
+}
+.category--img {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   object-fit: cover;
+}
+.category--title {
+   text-align: center;
+}
+/* CATEGORIES */
+/* MAIN */
