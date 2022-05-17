@@ -119,6 +119,8 @@ html {
    font-weight: var(--font-weight-bold);
 }
 /* POST */
+
+/* PRODUCTS */
 .products--list {
    margin-top: 10px;
    display: flex;
@@ -139,4 +141,24 @@ html {
 .product--info__price {
    font-weight: var(--font-weight-tiny);
 }
+/* PRODUCTS */
+
 /* MAIN */
+
+/* FOOTER */
+.footer {
+   padding: 20px 10px;
+   box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 5px;
+}
+.footer p {
+   text-align: center;
+}
+.footer--made {
+   font-size: var(--font-size-subtitle);
+   font-weight: var(--font-weight-bold);
+}
+/* FOOTER */
