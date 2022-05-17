@@ -31,6 +31,9 @@ html {
    font-size: var(--font-size-title);
    font-weight: var(--font-weight-bold);
 }
+.hidden {
+   display: none !important;
+}
 /* HELPERS */
 
 /* HEADER */
@@ -148,6 +151,12 @@ html {
    font-weight: var(--font-weight-tiny);
 }
 /* PRODUCTS */
+
+/* PRODUCT DETAILS */
+.product-details--img {
+   width: 100%;
+}
+/* PRODUCT DETAILS */
 
 /* MAIN */
 
