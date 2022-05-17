@@ -124,6 +124,9 @@ html {
 /* POST */
 
 /* PRODUCTS */
+.product {
+   width: 45%;
+}
 .products--list {
    margin-top: 10px;
    display: flex;
